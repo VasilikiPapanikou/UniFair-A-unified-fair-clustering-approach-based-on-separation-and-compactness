@@ -1,4 +1,20 @@
 # UniFair: A Unified fair clustering approach based on separation and compactness.
+Clustering is increasingly used to support high-impact de-
+cisions, yet standard objectives such as k-means can produce cluster-
+ings that treat demographic groups unequally. Existing fair clustering
+methods typically optimize a single notion of fairness and often overlook
+how clustering costs interact with the geometry of the induced deci-
+sion boundaries. We propose UniFair, a unified framework that jointly
+optimizes separation fairness and social fairness. Separation fairness en-
+courages protected groups to lie farther from the induced decision bound-
+aries, while social fairness reduces disparities in within-cluster distortion
+by penalizing group-wise clustering costs. We develop gradient-based op-
+timization procedures for separation-fair and unified k-means objectives,
+and extend them to deep clustering by enforcing the same criteria in
+the latent space of an autoencoder. Experiments on tabular and image
+datasets show that UniFair reduces both boundary-related and cost-
+based group disparities with only a modest increase in clustering loss.
+
 
 This repository provides implementations of multiple fairness-aware 
 clustering algorithms for high-dimensional tabular data. These methods 
